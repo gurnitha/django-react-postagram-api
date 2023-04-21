@@ -150,3 +150,38 @@
         NEXT: 
 
         Create environment variable
+
+
+#### 1.5 Connecting the database - Part 2: Create environment variable
+
+        Activitas:
+
+        1. Install django-environ
+
+        (venv3940) λ pip install django-decouple
+        ...
+        Successfully installed django-decouple-2.1
+
+        2. Create .env and .env-example files
+
+        (venv3940) λ touch .env .env-example
+
+        3. Configure the .env file
+
+        4. Setup environ on settings.py
+
+        5. Configure TIME_ZONE = 'Asia/Jakarta'
+
+        Testing: :)
+
+        new file:   .env-example
+        modified:   .gitignore
+        modified:   CoreRoot/settings.py
+        modified:   README.md
+
+        NEXT:
+
+        Part 2: Authentication and  Authorization using JWTs
+
+
+
