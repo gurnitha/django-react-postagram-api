@@ -93,4 +93,47 @@
         modified:   README.md
         new file:   manage.py
 
+        NEXT: Postgres configuration (Create database)
+
+
+#### 1.4 Postgres configuration (Create database)
+
+        Activitas:
+
+        1. Login
+
+        λ psql -U postgres
+        Password for user postgres:
+        psql (13.0, server 15.1)
+        ...
+        postgres=#
+
+        2. Create database
+
+        postgres=# CREATE DATABASE coredb;
+        CREATE DATABASE
+
+        3. Create user with password
+
+        postgres=# CREATE USER core WITH PASSWORD 'wCh29&HE&T83';
+        CREATE ROLE
+
+        4. Grant privileges on database (coredb) to user (core)
+        postgres=# GRANT ALL PRIVILEGES ON DATABASE coredb TO core;
+        GRANT
+
+        5. Make sure this user can create a database
+
+        postgres=#  ALTER USER core CREATEDB;
+        ALTER ROLE
+        postgres=#
+
+        modified:   README.md
+        modified:   requirements.txt
+
+        NEXT:
+
+        Connecting the database
+
+
 
