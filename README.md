@@ -17,3 +17,11 @@
         Activitas:
 
         modified:   .gitignore
+
+
+#### 1.1 Setting up the work environment
+
+        Activitas:
+
+        1. Instal node, python 3, pip, dan virtualenv
+        2. Memastikan versi yang terinstal
