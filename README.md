@@ -7,6 +7,13 @@
 ## Part 1: Technical Background
 
         Activitas:
-              
+
         modified:   .gitignore
         modified:   README.md
+
+
+### 1. Creating a Django Project
+
+        Activitas:
+
+        modified:   .gitignore
