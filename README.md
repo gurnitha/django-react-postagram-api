@@ -136,4 +136,17 @@
         Connecting the database
 
 
+#### 1.5 Connecting the database - Part 1: Configure connection 
 
+        Activitas:
+
+        1. Configuring db connection in settings.py
+
+        modified:   CoreRoot/settings.py
+        modified:   README.md
+
+        2. Run migration
+
+        NEXT: 
+
+        Create environment variable
