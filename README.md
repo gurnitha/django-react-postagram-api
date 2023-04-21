@@ -25,3 +25,44 @@
 
         1. Instal node, python 3, pip, dan virtualenv
         2. Memastikan versi yang terinstal
+
+
+#### 1.2 Creating a virtual environment and install django v4.0
+
+        Activitas:
+
+        F:\_ingafter65\DJANGO-REACT-SOSMED-POSTAGRAM\django-react-postagram-api
+
+        1. Create venv
+        λ python -m venv venv3940
+
+        2. Activate venv
+        λ venv3940\Scripts\activate.bat
+
+        3. Create requirements.txt
+        (venv3940) λ touch requirements.txt
+
+        4. Add Django==4.0 to requirements.txt
+
+        5. Instal django
+        (venv3940) λ pip install -r requirements.txt
+
+        6. Upgrade pip
+        (venv3940) λ python.exe -m pip install --upgrade pip
+
+        modified:   README.md
+        new file:   requirements.txt
+        new file:   venv3940/Scripts/Activate.ps1
+        new file:   venv3940/Scripts/activate
+        new file:   venv3940/Scripts/activate.bat
+        new file:   venv3940/Scripts/deactivate.bat
+        new file:   venv3940/Scripts/django-admin.exe
+        new file:   venv3940/Scripts/pip.exe
+        new file:   venv3940/Scripts/pip3.10.exe
+        new file:   venv3940/Scripts/pip3.9.exe
+        new file:   venv3940/Scripts/pip3.exe
+        new file:   venv3940/Scripts/python.exe
+        new file:   venv3940/Scripts/pythonw.exe
+        new file:   venv3940/Scripts/sqlformat.exe
+        new file:   venv3940/pyvenv.cfg
+
