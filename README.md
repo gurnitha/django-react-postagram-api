@@ -66,3 +66,31 @@
         new file:   venv3940/Scripts/sqlformat.exe
         new file:   venv3940/pyvenv.cfg
 
+
+#### 1.3 Creating a sample project
+
+        Activitas:
+
+        1. Membuat proyek
+        (venv3940) λ django-admin startproject CoreRoot .
+
+        2. Jalankan migrasi
+        (venv3940) λ python manage.py migrate
+
+        3. Jalankan server
+        (venv3940) λ python manage.py runserver
+
+        4. Lihat hasilnya di browser
+        http://127.0.0.1:8000/
+
+        NOTE: berhasil
+
+        new file:   CoreRoot/__init__.py
+        new file:   CoreRoot/asgi.py
+        new file:   CoreRoot/settings.py
+        new file:   CoreRoot/urls.py
+        new file:   CoreRoot/wsgi.py
+        modified:   README.md
+        new file:   manage.py
+
+
