@@ -414,14 +414,57 @@
         3. Select user from terminal
 
         postgres=# \c django_react_postagram_api
-        django_react_postagram_api=# SELECT * FROM core_user_user;
 
-        result: :)
+        django_react_postagram_api=# select first_name, username, email from core_user_user;  
+        first_name | username |        email
+        ------------+----------+----------------------
+        John       | john-doe | testuser@yopmail.com
+        (1 row)
 
         modified:   README.md
-        
+
         NEXT:
 
         3. Writing UserSerializer
 
+
+#### 3. Serializer - Install djangorestframework and django-filter
+
+        Activitas:
+
+        1. About serializer
+
+        A serializer allows us to convert complex Django complex data structures such as QuerySet or model instances into Python native objects that can be easily converted to JSON or XML format. However, a  serializer also serializes JSON or XML to native Python. 
+
+        Django Rest Framework (DRF) provides a serializers package you can use to write serializers and also validations when API calls are made to an endpoint using this serializer. 
+
+        Let’s install the DRF package and make some configurations first:
+
+        2. Install djangorestframework django-filter
+        (venv3940) λ pip install djangorestframework django-filter
+
+        3. Register rest_framework to the project
+
+        INSTALLED_APPS = [
+                ..
+
+                # third party
+                'rest_framework',
+
+                # new locals
+                'core.apps.CoreConfig',
+                'core.user.apps.UserConfig',
+        ]
+
+        4. Testing: run rever :)
+
+        5. Modified requirements.txt file
+
+        modified:   CoreRoot/settings.py
+        modified:   README.md
+        modified:   requirements.txt
+
+        NEXT:
+
+        4. Create UserSerializer
 
