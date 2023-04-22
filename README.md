@@ -186,9 +186,32 @@
 
 #### 2. Authentication and Authorization Using JWTs
 
-
         Activitas:
 
         1. modified:   README.md
 
+        NEXT:
 
+        2.1 Organizing a project by creating 'core' app
+
+
+#### 2.1 Organizing a project - Part 1: creating 'core' app
+
+        Activitas:
+
+        1. Creating a new app 'core'
+
+        (venv3940) λ django-admin startapp core
+
+        modified:   README.md
+        new file:   core/__init__.py
+        new file:   core/admin.py
+        new file:   core/apps.py
+        new file:   core/migrations/__init__.py
+        new file:   core/models.py
+        new file:   core/tests.py
+        new file:   core/views.py
+
+        NEXT:
+
+        2.1 Organizing a project - Part 2: register the core app to the project
