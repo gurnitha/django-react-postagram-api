@@ -181,7 +181,14 @@
 
         NEXT:
 
-        Part 2: Authentication and  Authorization using JWTs
+        2: Authentication and  Authorization using JWTs
 
+
+#### 2. Authentication and Authorization Using JWTs
+
+
+        Activitas:
+
+        1. modified:   README.md
 
 
