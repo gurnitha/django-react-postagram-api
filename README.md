@@ -374,3 +374,54 @@
         NEXT:
 
         2.2 Creating a user model - Part 5: use python shell to create user 
+
+
+#### 2.2 Creating a user model - Part 5: use python shell to create user 
+
+        Activitas:
+
+        1. (venv3940) λ :: Use python shell to create user
+
+        (venv3940) λ python manage.py shell
+        Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+        Type "help", "copyright", "credits" or "license" for more information.
+        (InteractiveConsole)
+        >>>
+
+        >>> from core.user.models import User
+        >>> data_user = {
+        ... "email":"testuser@yopmail.com",
+        ... "username":"john-doe",
+        ... "password":"12345",
+        ... "first_name":"John",
+        ... "last_name":"Doe"
+        ... }
+        >>>
+
+        2. The user is created in the database. Let's access some 
+        properties of the user object.
+
+        >>> user = User.objects.create_user(**data_user)
+        >>>
+        >>> user.name
+        'John Doe'
+        >>> user.email
+        'testuser@yopmail.com'
+        >>> user.password
+        'pbkdf2_sha256$320000$CB3AJtPo7izKHcFf0DEQUV$rI1hNIgYKhCKEPVECQW7VhtbqmptERuj4fRLIpgLejY='
+        >>>
+
+        3. Select user from terminal
+
+        postgres=# \c django_react_postagram_api
+        django_react_postagram_api=# SELECT * FROM core_user_user;
+
+        result: :)
+
+        modified:   README.md
+        
+        NEXT:
+
+        3. Writing UserSerializer
+
+
