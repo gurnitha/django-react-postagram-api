@@ -334,3 +334,43 @@
         NEXT:
 
         2.2 Creating a user model - Part 4: create User model
+
+
+#### 2.2 Creating a user model - Part 4: create User model 
+
+        Activitas:
+
+        1. Create UserManager and User models
+        modified:   core/user/models.py
+
+        2. Tell Django to use this User model for the authentication user model. 
+        In the  settings.py file, add the following line:
+
+        AUTH_USER_MODEL = 'core_user.User'
+
+        3. Due to issues made by the previous migrations, delete the db and re-create the same db
+
+        4. Testing:
+
+        (venv3940) λ python manage.py makemigrations
+        No changes detected
+
+        (venv3940) λ python manage.py migrate
+
+        new file:   core/user/migrations/0001_initial.py
+
+        5. Run server
+
+        (venv3940) λ python manage.py runserver
+        Watching for file changes with StatReloader
+        Performing system checks...
+
+        System check identified no issues (0 silenced).
+        April 22, 2023 - 11:05:03
+        Django version 4.0, using settings 'CoreRoot.settings'
+        Starting development server at http://127.0.0.1:8000/
+        Quit the server with CTRL-BREAK.
+
+        NEXT:
+
+        2.2 Creating a user model - Part 5: use python shell to create user 
