@@ -237,3 +237,23 @@
         NEXT:
 
         2.1 Organizing a project - Part 3: remove most files from the core app
+
+
+#### 2.1 Organizing a project - Part 3: remove most files from the core app
+
+        Activitas:
+
+        1. Keep apps.py file and remove the rest
+        2. Modified the apps.py file
+
+        modified:   README.md
+        deleted:    core/admin.py
+        modified:   core/apps.py
+        deleted:    core/migrations/__init__.py
+        deleted:    core/models.py
+        deleted:    core/tests.py
+        deleted:    core/views.py
+        
+        NEXT:
+
+        2.2 Creating 'user' app
