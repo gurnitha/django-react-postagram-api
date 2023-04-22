@@ -296,4 +296,41 @@
 
         NEXT:
 
-        2.2 Creating a user model - Part 3: create User model
+        2.2 Creating a user model - Part 3: move the user app to inside the core app
+
+
+#### 2.2 Creating a user model - Part 3: move the user app to inside the core app
+
+        Activitas:
+
+        1. Moving the user app to the inside of the core app
+        2. Modified INSTALLED_APPS in setting.py file
+
+        INSTALLED_APPS = [
+                ..
+
+                # new locals
+                'core.apps.CoreConfig',
+                'core.user.apps.UserConfig',
+        ]
+
+        3. Modified apps.py file
+
+        # name = 'user'
+        name = "core.user"
+        label = "core_user"
+
+        4. Run server for testing :)
+
+        modified:   CoreRoot/settings.py
+        renamed:    user/__init__.py -> core/user/__init__.py
+        renamed:    user/admin.py -> core/user/admin.py
+        renamed:    user/apps.py -> core/user/apps.py
+        renamed:    user/migrations/__init__.py -> core/user/migrations/__init__.py
+        renamed:    user/models.py -> core/user/models.py
+        renamed:    user/tests.py -> core/user/tests.py
+        renamed:    user/views.py -> core/user/views.py
+
+        NEXT:
+
+        2.2 Creating a user model - Part 4: create User model
