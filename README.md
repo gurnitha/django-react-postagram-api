@@ -278,3 +278,22 @@
         NEXT:
 
         2.2 Creating a user model - Part 2: register 'user' app to the project
+
+
+#### 2.2 Creating a user model - Part 2: register 'user' app to the project
+
+        Activitas:
+
+        1. Register user app to the project
+
+        INSTALLED_APPS = [
+	        ..
+
+	        # new locals
+	        'core.apps.CoreConfig',
+	        'user.apps.UserConfig',
+        ]
+
+        NEXT:
+
+        2.2 Creating a user model - Part 3: create User model

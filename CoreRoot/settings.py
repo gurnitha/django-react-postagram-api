@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # new locals
     'core.apps.CoreConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
