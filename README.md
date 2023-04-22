@@ -215,3 +215,25 @@
         NEXT:
 
         2.1 Organizing a project - Part 2: register the core app to the project
+
+
+#### 2.1 Organizing a project - Part 2: register the core app to the project
+
+        Activitas:
+
+        1. Register core app
+
+        INSTALLED_APPS = [
+	        ..
+
+	        # new locals
+	        'core.apps.CoreConfig',
+        ]
+
+        2. Run server
+
+        Testing: :)
+
+        NEXT:
+
+        2.1 Organizing a project - Part 3: remove most files from the core app
