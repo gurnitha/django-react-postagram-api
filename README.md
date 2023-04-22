@@ -468,3 +468,17 @@
 
         4. Create UserSerializer
 
+
+#### 4. Serializer - Create UserSerializer
+
+        Activitas:
+
+        1. Create serializers.py in core/user
+        2. Create UserSerializer class or model
+        3. Testing: run server :)
+
+        new file:   core/user/serializers.py
+        
+        NEXT:
+
+        5. Writing UserViewset
