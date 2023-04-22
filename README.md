@@ -253,7 +253,28 @@
         deleted:    core/models.py
         deleted:    core/tests.py
         deleted:    core/views.py
-        
+
         NEXT:
 
-        2.2 Creating 'user' app
+        2.2 Creating Creating a user model
+
+
+#### 2.2 Creating a user model - Part 1: create 'user' app
+
+        Activitas:
+
+        1. Creating 'user' app
+
+        (venv3940) λ django-admin startapp user 
+
+        new file:   user/__init__.py
+        new file:   user/admin.py
+        new file:   user/apps.py
+        new file:   user/migrations/__init__.py
+        new file:   user/models.py
+        new file:   user/tests.py
+        new file:   user/views.py
+
+        NEXT:
+
+        2.2 Creating a user model - Part 2: register 'user' app to the project
